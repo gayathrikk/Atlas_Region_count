@@ -144,6 +144,7 @@ public class dgx3_user_storage {
             case "sasi": return "sasikumar.c@htic.iitm.ac.in";
             case "sathes": return "satheskumar@htic.iitm.ac.in";
             case "shailesh": return "shailxiitm@gmail.com";
+            case "shubham": return "";
             case "siva": return "sivathanun@htic.iitm.ac.in";
             case "sriram": return "sriramv@htic.iitm.ac.in";
             case "supriti": return "supriti-supriti@htic.iitm.ac.in";
