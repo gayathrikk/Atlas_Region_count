@@ -48,6 +48,9 @@ public class Region_Count {
             sectionNo = scanner.nextLine();
         }
 
+        System.out.println("Biosample ID: " + biosampleId);
+        System.out.println("Section No: " + sectionNo);
+
         // Retrieve series set ID and series type based on biosample ID
         String[] seriesInfo = BIOSAMPLE_MAPPING.get(biosampleId);
         if (seriesInfo == null) {
