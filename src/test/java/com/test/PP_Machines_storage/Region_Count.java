@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.io.BufferedReader;
@@ -32,16 +34,19 @@ public class Region_Count {
         BIOSAMPLE_MAPPING.put("222", new String[]{"100", "306"});
         BIOSAMPLE_MAPPING.put("141", new String[]{"62", "148"});
     }
-    
+
+    @Parameters({"biosampleId", "sectionNo"})
     @Test
-    public void testSSHConnection() {
-        Scanner scanner = new Scanner(System.in);
+    public void testSSHConnection(@Optional String biosampleId, @Optional String sectionNo) {
+        if (biosampleId == null || sectionNo == null) {
+            Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter biosample ID: ");
-        String biosampleId = scanner.nextLine();
+            System.out.print("Enter biosample ID: ");
+            biosampleId = scanner.nextLine();
 
-        System.out.print("Enter section number: ");
-        String sectionNo = scanner.nextLine();
+            System.out.print("Enter section number: ");
+            sectionNo = scanner.nextLine();
+        }
 
         // Retrieve series set ID and series type based on biosample ID
         String[] seriesInfo = BIOSAMPLE_MAPPING.get(biosampleId);
