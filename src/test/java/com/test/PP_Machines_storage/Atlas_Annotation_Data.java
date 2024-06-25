@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Atlas_Annotation_Data {
 
@@ -36,10 +37,12 @@ public class Atlas_Annotation_Data {
         }
     }
 
-    @Parameters("biosampleId")
     @Test(priority = 1)
-    public void testListFiles(@Optional String biosampleId) throws Exception {
-        this.biosampleId = biosampleId;
+    public void testListFiles() throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter biosample ID: ");
+        biosampleId = scanner.nextLine();
+        scanner.close();
 
         String lsCommand = "cd /store/repos1/iitlab/humanbrain/analytics/" + biosampleId +
                 "/appData/atlasEditor/189/NISL && ls";
@@ -116,7 +119,7 @@ public class Atlas_Annotation_Data {
     }
 
     private static boolean isValidSize(String sizeStr, int threshold) {
-        if (sizeStr.endsWith("K")) {
+    	if (sizeStr.endsWith("K") || sizeStr.endsWith("M")){
             return true;
         } else {
             try {

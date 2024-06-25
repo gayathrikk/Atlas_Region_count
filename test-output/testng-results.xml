@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-24T10:39:49 IST" name="Default suite" finished-at="2024-06-24T10:40:38 IST" duration-ms="48270">
+  <suite started-at="2024-06-25T15:21:24 IST" name="Default suite" finished-at="2024-06-25T15:21:36 IST" duration-ms="12291">
     <groups>
     </groups>
-    <test started-at="2024-06-24T10:39:49 IST" name="Default test" finished-at="2024-06-24T10:40:38 IST" duration-ms="48270">
-      <class name="com.test.PP_Machines_storage.Atlas_Annotation_Data">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.PP_Machines_storage.Atlas_Annotation_Data@23c30a20]" started-at="2024-06-24T10:39:49 IST" name="setUp" finished-at="2024-06-24T10:39:50 IST" duration-ms="908" status="PASS">
+    <test started-at="2024-06-25T15:21:24 IST" name="Default test" finished-at="2024-06-25T15:21:36 IST" duration-ms="12291">
+      <class name="com.test.PP_Machines_storage.Region_Count">
+        <test-method signature="testSSHConnection()[pri:0, instance:com.test.PP_Machines_storage.Region_Count@22ef9844]" started-at="2024-06-25T15:21:24 IST" name="testSSHConnection" finished-at="2024-06-25T15:21:36 IST" duration-ms="12257" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testListFiles()[pri:1, instance:com.test.PP_Machines_storage.Atlas_Annotation_Data@23c30a20]" started-at="2024-06-24T10:39:50 IST" name="testListFiles" finished-at="2024-06-24T10:39:53 IST" duration-ms="2378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testListFiles -->
-        <test-method signature="testPrintFiles()[pri:2, instance:com.test.PP_Machines_storage.Atlas_Annotation_Data@23c30a20]" started-at="2024-06-24T10:39:53 IST" name="testPrintFiles" finished-at="2024-06-24T10:39:53 IST" depends-on-methods="com.test.PP_Machines_storage.Atlas_Annotation_Data.testListFiles" duration-ms="18" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPrintFiles -->
-        <test-method signature="testFlatTreeJsonFiles()[pri:3, instance:com.test.PP_Machines_storage.Atlas_Annotation_Data@23c30a20]" started-at="2024-06-24T10:39:53 IST" name="testFlatTreeJsonFiles" finished-at="2024-06-24T10:40:38 IST" depends-on-methods="com.test.PP_Machines_storage.Atlas_Annotation_Data.testListFiles" duration-ms="44935" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFlatTreeJsonFiles -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.PP_Machines_storage.Atlas_Annotation_Data@23c30a20]" started-at="2024-06-24T10:40:38 IST" name="tearDown" finished-at="2024-06-24T10:40:38 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.test.PP_Machines_storage.Atlas_Annotation_Data -->
+        </test-method> <!-- testSSHConnection -->
+      </class> <!-- com.test.PP_Machines_storage.Region_Count -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
