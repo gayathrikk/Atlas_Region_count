@@ -96,8 +96,8 @@ public class Region_Count {
             }
 
             // Print the command output
-            System.out.println("Command Output:");
-            System.out.println(output.toString());
+            // System.out.println("Command Output:");
+            // System.out.println(output.toString());
 
             // Parse the JSON output
             ObjectMapper objectMapper = new ObjectMapper();
